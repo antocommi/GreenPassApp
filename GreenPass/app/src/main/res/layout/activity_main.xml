@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_500"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green Pass"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                />
+
+
+            <ImageView
+                android:id="@+id/logoutOption"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_logout"
+                android:padding="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                />
+
+            <ImageView
+                android:id="@+id/qrOption"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_qr_code"
+                android:padding="5dp"
+                android:layout_toStartOf="@id/logoutOption"
+                android:layout_marginEnd="10dp"
+                />
+            <ImageView
+                android:id="@+id/statsOption"
+                android:layout_width="33dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/stats"
+                android:padding="5dp"
+                android:layout_toStartOf="@id/qrOption"
+                android:layout_marginEnd="10dp"
+                />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/noCustomerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Customer Found"
+        android:layout_centerInParent="true"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customerListRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mtoolbar"/>
+</RelativeLayout>

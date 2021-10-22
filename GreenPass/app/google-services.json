@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "616053994998",
+    "project_id": "greenpass-26029",
+    "storage_bucket": "greenpass-26029.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616053994998:android:d0ae2c086740e65657c3d7",
+        "android_client_info": {
+          "package_name": "com.covidcertificatechecker.greenpass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616053994998-67ajvusotsmitsf95hnd9oieqik0b23a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDaHrftUTrUZTLz0w9Mnn7jMUW9gkGsxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616053994998-67ajvusotsmitsf95hnd9oieqik0b23a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
